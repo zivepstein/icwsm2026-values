@@ -28,7 +28,7 @@ If you use this repository or build on the ideas in the paper, please cite:
 | [`data/test_data.csv`](data/test_data.csv) | Example tabular export: one row per (post, participant). Columns include post identifiers (`fid`), participant IDs (`PROLIFIC_PID`), human value ratings at multiple granularities (`val3_*`, `val2_*`, …), model outputs (e.g. base and fine-tuned GPT-style columns, `Rating_*_SCHWARTZ`), and calibrated predictions (`*_yhat`). |
 | [`results.R`](results.R) | R script that aggregates **human–human**, **human–consensus**, and **human–model** agreement (Spearman/Pearson correlations and MAE-style summaries) per post, then summarizes means. It also includes optional code to plot average Spearman correlations with error bars; set the PDF path in that block before exporting. |
 
-The CSV is suitable for reproducing the **evaluation logic** sketched in the script (see Figure 5, not the full data collection or model training pipeline). Replace `data/test_data.csv` with your full export if you have access to the complete study data.
+The CSV is suitable for reproducing the **evaluation logic** sketched in the script (see Figure 5, not the full data collection or model training pipeline).
 
 ## Running the analysis
 
